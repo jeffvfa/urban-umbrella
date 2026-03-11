@@ -1,0 +1,11 @@
+pandas  #dataframes
+scikit-learn #machine learning
+mlflow  # model tracking
+feast # feature store
+bentoml # model serving
+evidently # model monitoring
+fastapi 
+uvicorn 
+apache-airflow 
+dvc
+python-dotenv
