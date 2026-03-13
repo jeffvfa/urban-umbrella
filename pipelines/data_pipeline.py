@@ -7,6 +7,7 @@ def preprocess():
     df = pd.read_csv(RAW_DATA_FILE) 
 
     df['event_timestamp'] = pd.Timestamp.now()
+    df["event_timestamp"] = pd.to_datetime(df["event_timestamp"], utc=True)
     
     Path(PROCESSED_DATA_DIR).mkdir(parents=True, exist_ok=True) #guarantee that the processed data directory exists
     

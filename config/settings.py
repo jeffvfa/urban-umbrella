@@ -12,6 +12,9 @@ PROCESSED_DATA_DIR = DATA_DIR / "processed"
 RAW_DATA_FILE = RAW_DATA_DIR / "data.csv" 
 PROCESSED_FEATURES_FILE = PROCESSED_DATA_DIR / "features.parquet" 
 
+# feature store  
+FEATURE_STORE_PATH = BASE_DIR / "feature_store/house_features/feature_repo/"
+
 # mlflow
 MLFLOW_TRACKING_URI = "http://localhost:5000" 
 

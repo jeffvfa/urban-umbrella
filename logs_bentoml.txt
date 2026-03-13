@@ -1,0 +1,86 @@
+/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/_bentoml_sdk/io_models.py:158: PydanticDeprecatedSince211: The `__get_pydantic_core_schema__` method of the `BaseModel` class is deprecated. If you are calling `super().__get_pydantic_core_schema__` when overriding the method on a Pydantic model, consider using `handler(source)` instead. However, note that overriding this method on models can lead to unexpected side effects. Deprecated in Pydantic V2.11 to be removed in V3.0.
+  return super().__get_pydantic_core_schema__(source, handler)
+/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/tornado/ioloop.py:271: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+2026-03-13T13:05:32-0300 [INFO] [cli] Starting production HTTP BentoServer from "service/service.py:HousePriceService" listening on http://localhost:3000 (Press CTRL+C to quit)
+/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/_bentoml_sdk/io_models.py:158: PydanticDeprecatedSince211: The `__get_pydantic_core_schema__` method of the `BaseModel` class is deprecated. If you are calling `super().__get_pydantic_core_schema__` when overriding the method on a Pydantic model, consider using `handler(source)` instead. However, note that overriding this method on models can lead to unexpected side effects. Deprecated in Pydantic V2.11 to be removed in V3.0.
+  return super().__get_pydantic_core_schema__(source, handler)
+/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/websockets/legacy/__init__.py:6: DeprecationWarning: websockets.legacy is deprecated; see https://websockets.readthedocs.io/en/stable/howto/upgrade.html for upgrade instructions
+  warnings.warn(  # deprecated in 14.0 - 2024-11-09
+/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/uvicorn/protocols/websockets/websockets_impl.py:17: DeprecationWarning: websockets.server.WebSocketServerProtocol is deprecated
+  from websockets.server import WebSocketServerProtocol
+2026-03-13T13:05:37-0300 [INFO] [entry_service:house_price:1] Service house_price initialized
+2026-03-13T13:07:02-0300 [INFO] [entry_service:house_price:1] 127.0.0.1:53712 (scheme=http,method=GET,path=/,type=,length=) (status=200,type=text/html; charset=utf-8,length=2945) 14.408ms (trace=dbf1a655f375d9d8d60ac92b9123ec6d,span=c7d15ed0c8d348df,sampled=0,service.name=house_price)
+2026-03-13T13:07:02-0300 [INFO] [entry_service:house_price:1] 127.0.0.1:53716 (scheme=http,method=GET,path=/static_content/swagger-initializer.js,type=,length=) (status=200,type=text/javascript; charset=utf-8,length=331) 3.601ms (trace=fd860244395ab187cb6ad6c222281f9b,span=c2b1017d9f37fbfd,sampled=0,service.name=house_price)
+2026-03-13T13:07:02-0300 [INFO] [entry_service:house_price:1] 127.0.0.1:53713 (scheme=http,method=GET,path=/static_content/index.css,type=,length=) (status=200,type=text/css; charset=utf-8,length=1127) 8.634ms (trace=17aff3b582929cc150440557c606c6f6,span=51797823cd423195,sampled=0,service.name=house_price)
+2026-03-13T13:07:02-0300 [INFO] [entry_service:house_price:1] 127.0.0.1:53712 (scheme=http,method=GET,path=/static_content/swagger-ui.css,type=,length=) (status=200,type=text/css; charset=utf-8,length=152059) 11.742ms (trace=34fd05f113bc9ee1a605dcb927330239,span=844fe493230d763b,sampled=0,service.name=house_price)
+2026-03-13T13:07:02-0300 [INFO] [entry_service:house_price:1] 127.0.0.1:53715 (scheme=http,method=GET,path=/static_content/swagger-ui-standalone-preset.js,type=,length=) (status=200,type=text/javascript; charset=utf-8,length=230777) 11.189ms (trace=1b1d421177a28c95e60934e798b30843,span=8de4f691b736ba87,sampled=0,service.name=house_price)
+2026-03-13T13:07:02-0300 [INFO] [entry_service:house_price:1] 127.0.0.1:53714 (scheme=http,method=GET,path=/static_content/swagger-ui-bundle.js,type=,length=) (status=200,type=text/javascript; charset=utf-8,length=1415333) 19.464ms (trace=bc993ae310e61102c1a4caed5f7a3adc,span=ef83bc1d0bd6f0be,sampled=0,service.name=house_price)
+2026-03-13T13:07:02-0300 [INFO] [entry_service:house_price:1] 127.0.0.1:53714 (scheme=http,method=GET,path=/docs.json,type=,length=) (status=200,type=application/json,length=4954) 24.549ms (trace=ce8ebd5b22eb872bb6f87482fff0f530,span=1c51046b342001e0,sampled=0,service.name=house_price)
+2026-03-13T13:07:02-0300 [INFO] [entry_service:house_price:1] 127.0.0.1:53715 (scheme=http,method=GET,path=/static_content/favicon-dark-32x32.png,type=,length=) (status=200,type=image/png,length=654) 1.727ms (trace=8c3c8dd33d6963da5c7d23b3f855143a,span=d85554c9173ce66c,sampled=0,service.name=house_price)
+/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/_bentoml_impl/server/app.py:794: PydanticDeprecatedSince211: Accessing the 'model_fields' attribute on the instance is deprecated. Instead, you should access this attribute from the model class. Deprecated in Pydantic V2.11 to be removed in V3.0.
+  call_kwargs = {k: getattr(input_data, k) for k in input_data.model_fields}
+2026-03-13T13:07:14-0300 [INFO] [entry_service:house_price:1] 127.0.0.1:53895 (scheme=http,method=POST,path=/predict,type=application/json,length=43) (status=200,type=application/json,length=24) 58.497ms (trace=19427a963092c8b7cc261f744ddf65e8,span=70a740283ed46204,sampled=0,service.name=house_price)
+2026-03-13T13:09:19-0300 [INFO] [entry_service:house_price:1] Service instance cleanup finalized
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/_bentoml_impl/worker/service.py", line 246, in <module>
+    main()  # pylint: disable=no-value-for-parameter
+    ~~~~^^
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/_bentoml_impl/worker/service.py", line 186, in main
+    service = load(bento_identifier, standalone_load=True)
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/_bentoml_impl/loader.py", line 24, in load
+    load_service(
+    ~~~~~~~~~~~~^
+        bento_identifier,
+        ^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        reload=reload,
+        ^^^^^^^^^^^^^^
+    ),
+    ^
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/bentoml/_internal/service/loader.py", line 415, in load
+    svc = import_service(
+        bento_identifier,
+    ...<2 lines>...
+        standalone_load=standalone_load,
+    )
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/simple_di/__init__.py", line 139, in _
+    return func(*_inject_args(bind.args), **_inject_kwargs(bind.kwargs))
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/bentoml/_internal/service/loader.py", line 97, in import_service
+    svc = _do_import(svc_import_path, working_dir, reload)
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/bentoml/_internal/service/loader.py", line 162, in _do_import
+    module = importlib.import_module(module_name, package=working_dir)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1160, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1090, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/jeffersonabreu/Documents/urban-umbrella/service/service.py", line 38
+    features_from_store = store.get_online_features(features=features, entity_rows=entity_row)``
+                                                                                              ^
+SyntaxError: invalid syntax
+/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/_bentoml_sdk/io_models.py:158: PydanticDeprecatedSince211: The `__get_pydantic_core_schema__` method of the `BaseModel` class is deprecated. If you are calling `super().__get_pydantic_core_schema__` when overriding the method on a Pydantic model, consider using `handler(source)` instead. However, note that overriding this method on models can lead to unexpected side effects. Deprecated in Pydantic V2.11 to be removed in V3.0.
+  return super().__get_pydantic_core_schema__(source, handler)
+/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/websockets/legacy/__init__.py:6: DeprecationWarning: websockets.legacy is deprecated; see https://websockets.readthedocs.io/en/stable/howto/upgrade.html for upgrade instructions
+  warnings.warn(  # deprecated in 14.0 - 2024-11-09
+/Users/jeffersonabreu/Documents/urban-umbrella/.venv/lib/python3.13/site-packages/uvicorn/protocols/websockets/websockets_impl.py:17: DeprecationWarning: websockets.server.WebSocketServerProtocol is deprecated
+  from websockets.server import WebSocketServerProtocol
+2026-03-13T13:09:26-0300 [INFO] [entry_service:house_price:1] Service house_price initialized

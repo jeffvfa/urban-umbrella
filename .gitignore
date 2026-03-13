@@ -211,3 +211,4 @@ __marimo__/
 *.csv
 *.parquet 
 *.db
+mlruns/*
