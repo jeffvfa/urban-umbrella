@@ -1,0 +1,47 @@
+name: ML Pipeline CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pipeline:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run data pipeline
+      run: |
+        python -m pipelines.data_pipeline
+
+    - name: Apply Feast features
+      run: |
+        cd feature_store/house_features/feature_repo
+        feast apply
+
+    - name: Train model
+      run: |
+        python -m models.train
+
+    - name: Verify BentoML service loads
+      run: |
+        python -c "import service.service"
+
+    - name: Build Bento
+      run: |
+        bentoml build
